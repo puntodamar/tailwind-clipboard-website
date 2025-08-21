@@ -1,10 +1,33 @@
 {
-
   "scripts": {
     "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.12",
     "tailwindcss": "^4.1.12"
+  },
+  "tailwind": {
+    "content": ["./index.html", "./src/**/*.{html,js}"],
+    "theme": {
+      "screens": {
+        "sm": "480px",
+        "md": "768px",
+        "lg": "976px",
+        "xl": "1440px"
+      },
+      "extend": {
+        "colors": {
+          "strongCyan": "hsl(171, 66%, 44%)",
+          "lightBlue": "hsl(233, 100%, 69%)",
+          "darkGrayishBlue": "hsl(210, 10%, 33%)",
+          "grayishBlue": "hsl(201, 11%, 66%)",
+          "testpink": "#ff00ff"
+        },
+        "fontFamily": {
+          "sans": ["Bai Jamjuree", "sans-serif"]
+        }
+      }
+    },
+    "plugins": []
   }
 }

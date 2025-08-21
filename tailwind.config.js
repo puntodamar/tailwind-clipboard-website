@@ -1,5 +1,6 @@
-module.exports = {
-    content: ['./*.html'],
+// tailwind.config.js
+export default {
+    content: ['./index.html'],
     theme: {
         screens: {
             sm: '480px',
@@ -13,6 +14,7 @@ module.exports = {
                 lightBlue: 'hsl(233, 100%, 69%)',
                 darkGrayishBlue: 'hsl(210, 10%, 33%)',
                 grayishBlue: 'hsl(201, 11%, 66%)',
+                testpink: '#ff00ff',
             },
             fontFamily: {
                 sans: ['Bai Jamjuree', 'sans-serif'],

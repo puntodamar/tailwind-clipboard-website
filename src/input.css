@@ -1,1 +1,18 @@
 @import "tailwindcss";
+@theme {
+    --color-strong-cyan: hsl(171, 66%, 44%);
+    --color-light-blue: hsl(233, 100%, 69%);
+    --color-dark-grayish-blue: hsl(210, 10%, 33%);
+    --color-grayish-blue: hsl(233, 100%, 69%);
+    --font-sans: "Bai Jamjuree", sans-serif;
+    --background-header-desktop: url('/images/bg-header-desktop.png');
+    --background-header-mobile: url('/images/bg-header-mobile.png');
+}
+
+@utility bg-header-desktop {
+    background-image: url('/images/bg-header-desktop.png');
+}
+
+@utility bg-header-mobile {
+    background-image: url('/images/bg-header-mobile.png');
+}
