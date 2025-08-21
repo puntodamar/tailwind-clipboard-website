@@ -26,13 +26,25 @@
     @apply max-w-6xl mx-auto text-center px-10;
 }
 
+@utility section-content {
+    @apply max-w-3xl mx-auto  text-xl leading-9 text-center;
+}
+
 @utility button-container {
     @apply p-4 px-8 rounded-full shadow-lg  hover:opacity-80 duration-200;
+}
+
+@utility filter-greenish {
+    filter: invert(53%) sepia(68%) saturate(434%) hue-rotate(121deg) brightness(101%) contrast(94%);
 }
 
 @layer base {
     h3 {
         @apply mb-8 text-4xl font-bold  md:text-5xl;
+    }
+
+    h5 {
+        @apply mb-2 text-2xl font-bold;
     }
     p {
         @apply max-w-3xl mx-auto text-dark-grayish-blue;
