@@ -7,6 +7,11 @@
     --font-sans: "Bai Jamjuree", sans-serif;
     --background-header-desktop: url('/images/bg-header-desktop.png');
     --background-header-mobile: url('/images/bg-header-mobile.png');
+
+    --breakpoint-sm: 480px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 976px;
+    --breakpoint-xl: 1440px;
 }
 
 @utility bg-header-desktop {
@@ -16,3 +21,21 @@
 @utility bg-header-mobile {
     background-image: url('/images/bg-header-mobile.png');
 }
+
+@utility section-container {
+    @apply max-w-6xl mx-auto text-center;
+}
+
+@utility button-container {
+    @apply p-4 px-8 rounded-full shadow-lg  hover:opacity-80 duration-200;
+}
+
+@layer base {
+    h3 {
+        @apply mb-8 text-4xl font-bold  md:text-5xl;
+    }
+    p {
+        @apply max-w-3xl mx-auto text-dark-grayish-blue;
+    }
+}
+
